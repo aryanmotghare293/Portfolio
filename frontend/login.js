@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         try {
             // In a real deployed app, change this to your actual server domain
-            const res = await fetch('/api/send-otp', {
+            const res = await fetch('https://portfolio-vnct.onrender.com/api/send-otp', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email })
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         showMessage('Verifying code...', 'info');
         
         try {
-            const res = await fetch('/api/verify-otp', {
+            const res = await fetch('https://portfolio-vnct.onrender.com/api/verify-otp', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ email: currentEmail, otp })
