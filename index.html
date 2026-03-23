@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aryan | Software Developer Portfolio</title>
+    <!-- Modern Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Universe Canvas Background -->
+    <canvas id="space-canvas"></canvas>
+
+    <header>
+      <nav class="navbar">
+        <div class="logo"><img src="logo.png" alt="AM Logo" class="nav-logo"></div>
+        <ul class="nav-links">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#expertise">Expertise</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="login.html" class="btn btn-primary" style="padding: 0.4rem 1.2rem; font-size: 0.9rem; margin-left: 1rem;">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <span class="greeting">Hello, I am</span>
+          <h1>Aryan Motghare<br /><span>Data Analyst & Full Stack Developer</span></h1>
+          <p class="subtitle">Detail-oriented B.Tech IT student with strong foundations in SQL, Excel, Power BI, and Python, supported by real internship experience as a Jr. Data Analyst. Seeking opportunities to apply data-driven decision-making and analytical thinking in professional environments. Eager to contribute to impactful solutions while growing in the field of data analytics.</p>
+          <div class="btn-group">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="SpaceDev2-R.png" alt="Developer Illustration" />
+        </div>
+      </section>
+
+      <!-- Expertise / Skills Section -->
+      <section id="expertise" class="section">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="job-selection">
+          <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; color: var(--text-muted);">
+            Specialized in data analytics, full-stack development, and creating scalable solutions. Built for driving immediate impact in tech-forward teams.
+          </p>
+          <div class="skills-container timeline-item">
+            <div class="skill-tag"><span>🐍</span> Python</div>
+            <div class="skill-tag"><span>📊</span> SQL & MySQL</div>
+            <div class="skill-tag"><span>📈</span> Power BI & Excel</div>
+            <div class="skill-tag"><span>🌐</span> HTML, CSS, JavaScript</div>
+            <div class="skill-tag"><span>☕</span> Java</div>
+            <div class="skill-tag"><span>⚛️</span> React.js & Next.js</div>
+            <div class="skill-tag"><span>🔧</span> Git, Postman, VS Code</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Journey (Job Selection focused) -->
+      <section id="experience" class="section">
+        <h2 class="section-title">Professional Journey</h2>
+        <div class="experience-timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">July 2025 - Present</span>
+              <h3>Jr. Data Analyst Intern</h3>
+              <h4>Paarsh Infotech Pvt. Ltd. | Nashik, MH</h4>
+              <p>Organized and cleaned data using Excel and SQL to keep it accurate and updated. Wrote SQL queries to get useful information from the company's database. Created Power BI dashboards to show important trends and help the team make better decisions.</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Feb 2024 - March 2024</span>
+              <h3>Jr. Salesforce CRM Intern</h3>
+              <h4>IT-NetworkZ Infosystem Pvt. Ltd. | Nagpur, MH</h4>
+              <p>Cleaned, transformed, and validated datasets using Excel and SQL to ensure high data accuracy and reliability. Wrote and optimized SQL queries to extract, filter, and aggregate data from internal databases for reporting. Built interactive Power BI dashboards highlighting trends and KPIs to support data-driven decision-making.</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2022 - June 2026</span>
+              <h3>B.Tech in Information Technology</h3>
+              <h4>Priyadarshini Bhagwati College of Engineering | Nagpur, MH</h4>
+              <p>SGPA: 7.77. Gaining strong foundational knowledge in IT processes, full-stack technologies, and data structures. Active NSS Member coordinating volunteer operations and community outreach activities.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+<!-- Project 1 -->
+          <div class="project-card">
+            <!-- Project Image auto-generated -->
+            <img src="project_1.png" alt="Private Car Rental Web Portal" class="project-img" onerror="this.src='https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=800&auto=format&fit=crop'" />
+            <div class="project-info">
+              <h3>Private Car Rental Web Portal</h3>
+              <p>Developed a full-stack platform allowing users to book private cars for rental. Improved user experience inspired by Airbnb-style rental systems.</p>
+              <div class="project-tags">
+                <span>HTML/CSS</span>
+                <span>JavaScript</span>
+                <span>Java</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo →</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-card">
+            <img src="project_2.png" alt="NFT Marketplace" class="project-img" onerror="this.src='https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop'" />
+            <div class="project-info">
+              <h3>NFT Marketplace</h3>
+              <p>Created an NFT marketplace using Solidity and Next.js with MetaMask login. Used Pinata IPFS to store NFT images and metadata. Added features to mint, buy, and resell NFTs on the Ethereum test network.</p>
+              <div class="project-tags">
+                <span>Next.js</span>
+                <span>Blockchain</span>
+                <span>Solidity</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">Live Demo →</a>
+                <a href="#" class="project-link">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 - Replaced with Certs/Roles -->
+          <div class="project-card">
+            <img src="project_3.png" alt="Certifications & Roles" class="project-img" onerror="this.src='https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?q=80&w=800&auto=format&fit=crop'" />
+            <div class="project-info">
+              <h3>Certifications & Leadership</h3>
+              <p><strong>Certifications:</strong> Salesforce CRM (ITNetworkz Pvt. Ltd. - Mar 2024), Azure Fundamentals (Microsoft - Jun 2025), Data Analytics Virtual (Deloitte - Jul 2025).</p>
+               <br/>
+              <p><strong>Responsibilities:</strong> NSS Member coordinating health-awareness and educational support events with strong teamwork.</p>
+              <div class="project-tags">
+                <span>Salesforce</span>
+                <span>Azure</span>
+                <span>Data Analytics</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <h2 class="section-title">Let's Connect</h2>
+        <div class="contact-container timeline-item">
+          <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted);">
+            Nagpur, MH | <strong>Phone:</strong> 9404511660 | <strong>Email:</strong> aryanmotghare293@gmail.com
+          </p>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Aryan Motghare. Built with passion & precision.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

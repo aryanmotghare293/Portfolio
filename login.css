@@ -1,0 +1,85 @@
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.login-glass-panel {
+  background: rgba(10, 15, 36, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 50px 40px;
+  width: 100%;
+  max-width: 450px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 40px rgba(168, 85, 247, 0.1);
+}
+
+.login-glass-panel h2 {
+  font-size: 2.2rem;
+  margin-bottom: 5px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login-glass-panel p {
+  color: #94A3B8;
+  margin-bottom: 35px;
+  font-size: 0.95rem;
+}
+
+.input-group {
+  margin-bottom: 25px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 18px;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: white;
+  font-family: inherit;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.2);
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.input-group input::placeholder {
+  letter-spacing: normal;
+  color: #52637a;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+}
+
+.message-box {
+  margin-top: 25px;
+  font-size: 0.95rem;
+  min-height: 20px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.msg-success { color: #4ade80; text-shadow: 0 0 10px rgba(74, 222, 128, 0.3); }
+.msg-error { color: #f87171; text-shadow: 0 0 10px rgba(248, 113, 113, 0.3); }
+.msg-info { color: #93c5fd; }

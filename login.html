@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Aryan Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+  <!-- Universe Canvas Background -->
+  <canvas id="space-canvas"></canvas>
+
+  <nav class="navbar" style="backdrop-filter: none; background: transparent; border: none; box-shadow: none;">
+    <div class="logo"><a href="/" style="text-decoration: none;"><img src="logo.png" alt="AM Logo" class="nav-logo"></a></div>
+  </nav>
+
+  <div class="login-wrapper">
+    <div class="login-glass-panel timeline-item show">
+       <h2>Welcome Back</h2>
+       <p>Verify your identity to continue</p>
+       
+       <!-- Email Step -->
+       <form id="emailForm">
+           <div class="input-group">
+               <input type="email" id="emailInput" placeholder="Enter your email" required />
+           </div>
+           <button type="submit" class="btn btn-primary login-btn">Send OTP</button>
+       </form>
+
+       <!-- OTP Step (hidden initially) -->
+       <form id="otpForm" style="display: none;">
+           <div class="input-group">
+               <input type="text" id="otpInput" placeholder="Enter 6-digit OTP" required maxlength="6" pattern="\d{6}" />
+           </div>
+           <button type="submit" class="btn btn-primary login-btn">Verify Login</button>
+           <button type="button" id="backBtn" class="btn btn-secondary login-btn" style="margin-top: 15px;">Back</button>
+       </form>
+       
+       <div id="messageBox" class="message-box"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
